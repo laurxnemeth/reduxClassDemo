@@ -9,10 +9,9 @@ function Counter() {
 	const count = useSelector((state) => state.counter.value);
 	const setNum = useSelector((state) => state.counter.setNum);
 
-	console.log(state);
 	return (
-		<div>
-			<div>
+		<div id="counter">
+			<div id="increase-decrease">
 				<button onClick={() => dispatch(decrement())}>-</button>
 				<span className="counter">{count}</span>
 				<button onClick={() => dispatch(increment())}>+</button>
